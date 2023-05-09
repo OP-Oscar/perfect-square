@@ -37,8 +37,23 @@ function perfectSquare(x){
     return -1 
 }
 
+
 console.log(perfectSquare(9)) // => should return 16
 
 console.log(perfectSquare(289)) // => should return 324
 
 console.log(perfectSquare(3000)) // => should return -1
+
+
+
+
+console.log("")
+//second version of solution
+const perfectSquareTwo = (x) => Number.isInteger(Math.sqrt(x)) ? (Math.sqrt(x)+1)**2 : -1
+
+console.log(perfectSquareTwo(9)) // => should return 16
+
+console.log(perfectSquareTwo(289)) // => should return 324
+
+console.log(perfectSquareTwo(3000)) // => should return -1
+
